@@ -26,7 +26,6 @@ public class TestParrotTrouble {
     }
 
 
-
    @Parameterized.Parameters(name = "{index}: ParrotTrouble({0},{1}) => {2}")
    public static List<Object[]> data() {
        return Arrays.asList(new Object[][] {

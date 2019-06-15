@@ -1,7 +1,5 @@
 package warmup1;
 
-import java.nio.file.ProviderMismatchException;
-
 /*
  *
  * Given an int n, return true if it is within 10 of 100 or 200. Note:

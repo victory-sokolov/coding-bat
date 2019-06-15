@@ -1,16 +1,19 @@
 package warmup1;
 
+import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 
 import static org.hamcrest.core.Is.is;
 import static org.hamcrest.core.IsEqual.equalTo;
-import static org.junit.Assert.*;
+import org.junit.Assert.*;
 
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.List;
+
+
 
 @RunWith(Parameterized.class)
 public class TestParrotTrouble {
@@ -25,16 +28,13 @@ public class TestParrotTrouble {
         this.expected = expected;
     }
 
-
-   @Parameterized.Parameters(name = "{index}: ParrotTrouble({0},{1}) => {2}")
-   public static List<Object[]> data() {
-       return Arrays.asList(new Object[][] {
-           {true, 6, true}, {true, 7, false}, {false, 6, false}
-       });
-   }
+    @Parameterized.Parameters(name = "{index}: ParrotTrouble({0},{1}) => {2}")
+    public static List<Object[]> data() {
+        return Arrays.asList(new Object[][] { { true, 6, true }, { true, 7, false }, { false, 6, false } });
+    }
 
     @Test
     public void testParrotTrouble() {
-        assertThat(ParrotTrouble.parrotTrouble(talking, hours), is(equalTo(expected)));
+        Assert.assertThat(ParrotTrouble.parrotTrouble(talking, hours), is(equalTo(expected)));
     }
 }

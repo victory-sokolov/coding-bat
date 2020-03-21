@@ -1,2 +1,4 @@
-# coding-bat
-Solution for CodingBat problems in Java
+# CodingBat
+Solution for CodingBat problems in Java.
+
+http://codingbat.com/
